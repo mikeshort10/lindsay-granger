@@ -997,14 +997,14 @@ class App extends Component {
               <FormGroup>
                 <Radio
                   name="numOfEnemies"
-                  onChange={() => this.changeState("numOfEnemies")}
+                  onChange={() => this.changeState(event,"numOfEnemies")}
                   value={6}
                 >
                   6
                 </Radio>
                 <Radio
                   name="numOfEnemies"
-                  onChange={() => this.changeState("numOfEnemies")}
+                  onChange={() => this.changeState(event,"numOfEnemies")}
                   value={12}
                   checked="checked"
                 >
@@ -1012,7 +1012,7 @@ class App extends Component {
                 </Radio>
                 <Radio
                   name="numOfEnemies"
-                  onChange={() => this.changeState("numOfEnemies")}
+                  onChange={() => this.changeState(event,"numOfEnemies")}
                   value={18}
                 >
                   18
@@ -1022,7 +1022,7 @@ class App extends Component {
               <FormGroup>
                 <Radio
                   name="enemyType"
-                  onChange={() => this.changeState("enemyType")}
+                  onChange={() => this.changeState(event,"enemyType")}
                   value="hufflepuff"
                   checked="checked"
                 >
@@ -1030,14 +1030,14 @@ class App extends Component {
                 </Radio>
                 <Radio
                   name="enemyType"
-                  onChange={() => this.changeState("enemyType")}
+                  onChange={() => this.changeState(event,"enemyType")}
                   value="ravenclaw"
                 >
                   Ravenclaw
                 </Radio>
                 <Radio
                   name="enemyType"
-                  onChange={() => this.changeState("enemyType")}
+                  onChange={() => this.changeState(event,"enemyType")}
                   value="slytherin"
                 >
                   Slytherin
