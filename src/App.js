@@ -753,6 +753,7 @@ class App extends Component {
     return [row, column];
   }
 
+
   boardSetup() {
     let board = {};
     let boss;
@@ -873,9 +874,9 @@ class App extends Component {
     this.keyup(code);
   }
 
-  changeState(event, key) {
+  changeState(key, val) {
     let state = Object.assign({}, this.state);
-    state[key] = event.target.value;
+    state[key] = val;
     this.setState(state);
   }
 
@@ -997,22 +998,22 @@ class App extends Component {
               <FormGroup>
                 <Radio
                   name="numOfEnemies"
-                  onChange={() => this.changeState("numOfEnemies")}
+                  onChange={() => this.changeState("numOfEnemies", 6)}
                   value={6}
                 >
                   6
                 </Radio>
                 <Radio
                   name="numOfEnemies"
-                  onChange={() => this.changeState("numOfEnemies")}
+                  onChange={() => this.changeState("numOfEnemies", 12)}
                   value={12}
-                  checked="checked"
+                  checked={this.state.numOfEnemies === 12 ? "checked" : ""}
                 >
                   12
                 </Radio>
                 <Radio
                   name="numOfEnemies"
-                  onChange={() => this.changeState("numOfEnemies")}
+                  onChange={() => this.changeState("numOfEnemies", 18)}
                   value={18}
                 >
                   18
@@ -1022,22 +1023,22 @@ class App extends Component {
               <FormGroup>
                 <Radio
                   name="enemyType"
-                  onChange={() => this.changeState("enemyType")}
+                  onChange={() => this.changeState("enemyType", "hufflepuff")}
                   value="hufflepuff"
-                  checked="checked"
+                  checked={this.state.enemyType === "hufflepuff" ? "checked" : ""}
                 >
                   Hufflepuff
                 </Radio>
                 <Radio
                   name="enemyType"
-                  onChange={() => this.changeState("enemyType")}
+                  onChange={() => this.changeState("enemyType", "ravenclaw")}
                   value="ravenclaw"
                 >
                   Ravenclaw
                 </Radio>
                 <Radio
                   name="enemyType"
-                  onChange={() => this.changeState("enemyType")}
+                  onChange={() => this.changeState("enemyType", "slytherin")}
                   value="slytherin"
                 >
                   Slytherin
