@@ -475,8 +475,8 @@ class App extends Component {
   }
 
   alohomora(board) {
-    delete board[21][44].player;
-    board[21][44].playable = true;
+    delete board[23][46].player;
+    board[23][46].playable = true;
     return board;
   }
 
