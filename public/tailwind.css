@@ -1,0 +1,172 @@
+@tailwind base;
+@tailwind utilities;
+
+.modal-hide {
+  display: none;
+}
+
+.static-modal {
+  color: black;
+}
+
+@keyframes lighting {
+  0% {
+    background: linear-gradient(45deg, #861313, #ec7979);
+  }
+  10% {
+    background: linear-gradient(45deg, #861313, #ec7979 90%);
+  }
+  20% {
+    background: linear-gradient(45deg, #861313, #ec7979);
+  }
+  30% {
+    background: linear-gradient(45deg, #861313, #ec7979 90%);
+  }
+  40% {
+    background: linear-gradient(45deg, #861313, #ec7979);
+  }
+  50% {
+    background: linear-gradient(45deg, #861313, #ec7979 90%);
+  }
+  55% {
+    background: linear-gradient(45deg, #861313, #ec7979);
+  }
+  65% {
+    background: linear-gradient(45deg, #861313, #ec7979 90%);
+  }
+  70% {
+    background: linear-gradient(45deg, #861313, #ec7979);
+  }
+  75% {
+    background: linear-gradient(45deg, #861313, #ec7979 90%);
+  }
+  80% {
+    background: linear-gradient(45deg, #861313, #ec7979);
+  }
+  90% {
+    background: linear-gradient(45deg, #861313, #ec7979 90%);
+  }
+  100% {
+    background: linear-gradient(45deg, #861313, #ec7979);
+  }
+}
+
+html,
+body,
+#root {
+  height: 500px;
+  width: 500px;
+  cursor: none;
+}
+
+.potion {
+  color: green;
+}
+
+.purple {
+  background: purple;
+}
+
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+#game {
+  height: 80vmin;
+  width: 80vmin;
+}
+
+body {
+  font-family: "Cochin", "EB Garamond", "transitional", "serif";
+  font-size: 3vh;
+  display: flex;
+  justify-content: center;
+  background: black;
+  color: white;
+}
+
+.space,
+.purple,
+.wall,
+.darkness {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(80vmin / 54);
+  width: calc(80vmin / 54);
+  font-size: calc(80vmin / 75);
+  box-shadow: 1px 1px #d38484;
+}
+
+/* .space {
+  background: #d98c8c;
+} */
+
+.light:nth-child(1) {
+  border-radius: 50%;
+}
+
+.panel-body {
+  background: black;
+}
+
+.wall,
+.door {
+  background: linear-gradient(45deg, #861313, #ec7979);
+  /* animation: lighting 1s infinite; */
+  border-radius: 20%;
+}
+
+.darkness {
+  background: black;
+  box-shadow: none;
+  color: black;
+}
+
+.darkness i {
+  color: black;
+}
+
+.player {
+  color: red;
+}
+
+.hufflepuff {
+  color: yellow;
+}
+
+.ravenclaw {
+  color: blue;
+}
+
+.slytherin {
+  color: green;
+}
+
+.boss {
+  color: white;
+}
+
+.wand {
+  color: white;
+}
+
+.book {
+  color: purple;
+}
+
+.door {
+  color: yellow;
+}
+
+#granger-board {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* width: 540px; */
+  margin: auto;
+  background: black;
+}
+
+@tailwind components;
